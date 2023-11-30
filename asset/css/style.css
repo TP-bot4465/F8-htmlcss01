@@ -67,7 +67,8 @@ a {
 
 .hero-wrap {
     background: #E6F0FF;
-    height: 100vh;
+    /* do ban đầu ta set cho nó là 100vh nhưng sau đó lại thêm  90px lên trên nên cần phải trừ */
+    height: calc(100vh - 90px);
     position: relative;
     /* đoạn này để xoá đi khoảng trắng do margin colapse */
     display: flex;
