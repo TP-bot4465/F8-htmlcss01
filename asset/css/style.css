@@ -54,10 +54,24 @@ a {
 }
 
 /* HEADER */
-.header {
+
+.fixed-header {
+    background-color: #E6F0FF;
+    /* bù lại cho phần bị lấy ở navbar */
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+
+.hero-wrap {
     background: #E6F0FF;
     height: 100vh;
     position: relative;
+    /* đoạn này để xoá đi khoảng trắng do margin colapse */
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -66,7 +80,8 @@ a {
     display: flex;
     align-items: center;
     /* Ở đây dùng padding vì nếu dùng margin sẽ dính MARGIN COLLAPES */
-    padding: 38px;
+    /* padding: 38px; */
+    padding: 12px 0;
 }
 
 .navbar ul {
