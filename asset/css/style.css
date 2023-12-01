@@ -79,6 +79,7 @@ a {
     /* đoạn này để xoá đi khoảng trắng do margin colapse */
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -125,10 +126,6 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 13rem;
-
-}
 
 .hero .info {
     width: 50%;
